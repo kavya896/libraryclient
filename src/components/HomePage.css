@@ -1,0 +1,56 @@
+.container {
+    margin: 0%;
+    padding: 0%;
+    background-image: url("./bgi.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#wel{
+    
+    color: white;
+    text-align: center;
+    width: 60%;
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+#myapp{
+    color: white;
+    font-size: 15px;
+    /* border: 2px solid white; */
+    padding: 61px 61px 0 61px;
+    text-align: center;
+    margin: 7px;
+}
+
+#loginBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 100px;
+
+}
+
+.btn{
+    background-color: rgb(97, 4, 40,1);
+    color: white;
+    width: 120px;
+    padding: 15px;
+    font-size: 16px;
+    margin: 10px;
+    border-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+
+}

@@ -1,0 +1,101 @@
+#main{
+    margin: 0%;
+    padding: 0%;
+    background-image: url("./bgi.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    position: fixed;
+}
+#p-header{
+    display: block;
+    margin: 26px 0px 7px 46px;
+}
+#p-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-direction: row-reverse;
+    
+    
+}
+.p-btn{    
+    margin: 5px;
+    padding: 9px;
+    font-size: 14px;
+    border-radius: 11px;
+}
+#createBtn{
+    background-color:#87d8de;
+}
+#p-logout{
+    background-color: #e7dd2d;
+}
+#p-n{
+    margin:25px auto;
+    background-image: url("./bgi.jpg");
+    background-size: cover;
+    width: 70%;
+    height: 70%;
+    overflow-y: auto;
+    /* overflow-x:hidden ; */
+}
+#p-notes{
+    /* background-color: #e7dd2d; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+#s-eachItem{
+    margin: auto;
+    margin-top: 15px;
+    padding: 11px;
+    background-color: white;
+    color: black;
+    width:80% ;
+    
+}
+
+#p-title{
+    background-color: #f2e185;
+    padding: 11px;
+    margin-top: -11px;
+    margin-left: -11px;
+    width: 100%;
+}
+
+#p-t{
+    background-color: white;
+    color: black;
+
+}
+#p-b{
+    margin: 5px;
+    padding: 9px;
+    font-size: 14px;
+    border-radius: 11px;
+   
+}
+.p-ub{
+    background-color:#10bed8;
+    color: white;
+}
+.p-nb{
+    background-color:#ed6b6b;
+    color: white;
+} 
+#image{
+    display: flex;
+    margin: 20px;
+}
+#i-settings{
+    width: 100px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+

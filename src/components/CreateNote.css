@@ -1,0 +1,52 @@
+.c-container{
+    margin: 0%;
+    padding: 0%;
+    background-image: url("./bgi.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+#l-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#forInput{
+    margin: 5px;
+    padding: 13px;
+    font-size: 18px;
+    width:250px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#forArea{
+    width: 270px; 
+    height: 180px;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+#c-btn{
+    margin: 10px;
+    padding: 13px;
+    font-size: 18px;
+    width:123px;
+    border-radius: 15px;
+    background-color: rgb(97, 4, 40,1);
+    border: 1px solid white;
+    color:white;
+}
+
+#c-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#note{
+    color: white;
+}

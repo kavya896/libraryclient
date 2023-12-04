@@ -1,0 +1,15 @@
+#u-container{
+    margin: 0%;
+    padding: 0%;
+    background-image: url("./bgi.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    color: white; 
+
+}
+
+#i-container{
+    margin: auto;
+}
