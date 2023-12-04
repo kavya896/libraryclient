@@ -13,7 +13,7 @@ export const register = (email,password,cpassword,image) => async(dispatch)=>{
         } 
         
         
-        const result = await axios.post("/register",{email,password,cpassword,image},config)
+        const result = await axios.post("https://mernappbackend-jieh.onrender.com/register",{email,password,cpassword,image},config)
         
     
         if(result){
@@ -46,7 +46,7 @@ export const login = (email,password)=>async(dispatch)=>{
             }
         }
         console.log("entered")
-        const  result  = await axios.post("/login",{email,password},config)
+        const  result  = await axios.post("https://mernappbackend-jieh.onrender.com/login",{email,password},config)
         if(result){
             if(result.data.message){
                 document.getElementById("message").innerHTML = result.data.message
@@ -72,7 +72,7 @@ export const getusers=()=>async(dispatch)=>{
                 "Content-type":"application/json"
             }
         }
-        const {data}= await axios.get("/users",config)
+        const {data}= await axios.get("https://mernappbackend-jieh.onrender.com/users",config)
         console.log("users data from actions", data)
         dispatch({type:ALL_USERSLIST_SUCCESS,payload:data})
     }catch(err){
@@ -94,7 +94,7 @@ export const createNotes = (title,content)=>async(dispatch)=>{
             }
         }
         console.log("created Note")
-        const data = await axios.post("/note/create",{title,content},config)
+        const data = await axios.post("https://mernappbackend-jieh.onrender.com/note/create",{title,content},config)
         console.log(data) 
         dispatch({type:NOTE_CREATED_SUCCESS,payload:data})
         
@@ -116,7 +116,7 @@ export const getNotes = ()=>async(dispatch)=>{
             }
         }
 
-        const {data} = await axios.get("/note",config)
+        const {data} = await axios.get("https://mernappbackend-jieh.onrender.com/note",config)
         console.log("data from actions",data)
         dispatch({type:NOTE_LIST_SUCCESS,payload:data})
 
@@ -135,7 +135,7 @@ export const particularNote = (id)=>async(dispatch)=>{
                 Authorization:`Bearer ${token}`
             }
         }
-        const { data } = await axios.get(`/note/${id}`,config)
+        const { data } = await axios.get(`https://mernappbackend-jieh.onrender.com/note/${id}`,config)
         console.log("...................",data)
         dispatch({type:SINGLE_NOTE_SUCCESS,payload:data})
         localStorage.setItem("updateNote",JSON.stringify(data))
@@ -156,7 +156,7 @@ export const deletenote = (id)=>async(dispatch)=>{
                 Authorization : `Bearer ${token}` 
             }
         }
-        const data = await axios.delete(`/note/delete/${id}`,config)
+        const data = await axios.delete(`https://mernappbackend-jieh.onrender.com/note/delete/${id}`,config)
         console.log("deletedOne",data)
         dispatch({type:REMOVE_NOTE_SUCCESS,payload:data})
     }catch(err){
@@ -177,7 +177,7 @@ export const updatenote = (id,title,content) =>async(dispatch)=>{
 
             }
         }
-        const {data} = await axios.post(`/note/update/${id}`,{title,content},config)
+        const {data} = await axios.post(`https://mernappbackend-jieh.onrender.com/note/update/${id}`,{title,content},config)
         console.log(data)
         dispatch({type:UPDATE_NOTE_SUCCESS,payload:data})
 
